@@ -29,7 +29,7 @@ function login(e){
 
     if(email.value == user_data.email && password.value == user_data.password){
         loginInput();
-        window.location.href = window.location.href.replace('login.html', 'movie.html');
+        window.location.href = window.location.href.replace('login.html', 'stream.html');
     }else{
         if(password.nextElementSibling.tagName == 'P'){
             password.nextElementSibling.remove();
