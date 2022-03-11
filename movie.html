@@ -5,8 +5,12 @@
   <meta charset="utf-8">
   <title>Movie App</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS LINKING -->
   <link rel="stylesheet" href="movie.css">
+  <!-- Font CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
   <!-- Owl Carousel css-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
@@ -14,6 +18,7 @@
 
   <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
   <link href="youtube-overlay.css" rel="stylesheet">
+  <link rel="stylesheet" href="./chat.css">
 
   <!-- jquery css-->
   <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
@@ -70,7 +75,7 @@
             </p>
             <div class="button flex">
               <button class="btn" id="exampleImage" data-videourl="https://www.youtube.com/embed/JfVOs4VSpmA">PLAY NOW</button>
-              <i id="palybtn" class="fas fa-play"></i>
+              <i id="palybtn" class="fa-solid fa-share"></i><i id="palybtn" class="ri-share-fill"></i>
               <p>WATCH TRAILER</p>
             </div>
           </div>
@@ -908,5 +913,6 @@ try {
   })();
 
 </script>
+<script src="./chat.js"></script>
 <!-- <script src="./youtube-overlay.js"></script> -->
 </html>

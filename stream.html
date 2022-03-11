@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
   <link rel="stylesheet" href="./stream.css">
+  <link rel="stylesheet" href="./invite.css">
   <title>Select a service</title>
 </head>
 <body>
@@ -17,10 +18,29 @@
         <div class="text">Start a Stream</div>
       </div>
       <div class="col">
-        <div class="icon"><a href=""><i class="ri-add-circle-line"></i></a></div>
+        <div class="icon" data-toggle="modal" data-target="#modal"><a href=""><i class="ri-add-circle-line"></i></a></div>
         <div class="text">Join a stream</div>
       </div>
     </div>
+
+
+    <!-- MODAL -->
+    <div class="modal" id="modal">
+      <div class="modal__wrapper">
+        <h3>Join a Stream</h3>
+        <p>Join your friends and family to watch the best movies and also have a chat with them :)</p>
+        <form action="./movie.html">
+          <input required type="text" placeholder="Enter a movie Special key">
+          <div class="btn-group">
+            <button type="submit" class="btn btn-blue">Join</button>
+            <button class="btn btn-light modal__close">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- MODAL -->
+  
+    <script src="./invite.js"></script>
   </div>  
 </body>
 </html>

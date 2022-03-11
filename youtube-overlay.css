@@ -17,7 +17,7 @@
 	 right: 0;
 	 bottom: 0;
 	 z-index: 1200;
-	 background-color: rgba(0, 0, 0, 0.9);
+	 background-color: rgba(0, 0, 0, 1);
 	 transition-property: all;
 	 -moz-transition-property: all;
 	 -webkit-transition-property: all;
@@ -63,6 +63,67 @@
 	 -moz-transition-timing-function: ease-in-out;
     display: flex;
 }
+.videoPlayerOverlay .closeIconn {
+	position: absolute;
+	right: 15px;
+	top: 75px;
+	width: 3rem;
+	z-index: 200;
+	padding: 10px;
+	border-radius: 50%;
+	border: 0;
+	
+	background: #fff;
+	width: 30px;
+	height: 30px;
+	transition-property: transform;
+	-moz-transition-property: transform;
+	-webkit-transition-property: transform;
+	-o-transition-property: transform;
+	-ms-transition-property: transform;
+	transition-duration: 0.25s;
+	-webkit-transition-duration: 0.25s;
+	-ms-transition-duration: 0.25s;
+	-moz-transition-duration: 0.25s;
+	-o-transition-duration: 0.25s;
+	transition-timing-function: ease-in-out;
+	-webkit-transition-timing-function: ease-in-out;
+	-o-transition-timing-function: ease-in-out;
+	-ms-transition-timing-function: ease-in-out;
+	-moz-transition-timing-function: ease-in-out;
+	 display: flex;
+}
+
+.videoPlayerOverlay .closeIconnn {
+	position: absolute;
+	right: 15px;
+	top: 140px;
+	width: 3rem;
+	z-index: 200;
+	cursor: pointer;
+	padding: 10px;
+	border-radius: 50%;
+	border: 0;
+	background: #fff;
+	width: 30px;
+	height: 30px;
+	transition-property: transform;
+	-moz-transition-property: transform;
+	-webkit-transition-property: transform;
+	-o-transition-property: transform;
+	-ms-transition-property: transform;
+	transition-duration: 0.25s;
+	-webkit-transition-duration: 0.25s;
+	-ms-transition-duration: 0.25s;
+	-moz-transition-duration: 0.25s;
+	-o-transition-duration: 0.25s;
+	transition-timing-function: ease-in-out;
+	-webkit-transition-timing-function: ease-in-out;
+	-o-transition-timing-function: ease-in-out;
+	-ms-transition-timing-function: ease-in-out;
+	-moz-transition-timing-function: ease-in-out;
+	 display: flex;
+}
 .videoPlayerOverlay .closeIcon img {
   width: 100%;
   height: auto;
@@ -75,6 +136,7 @@
 	 right: 0;
 	 margin: auto;
 	 top: 50%;
+	 z-index: -2;
 	 transform: translateY(-50%);
 	 -webkit-transform: translateY(-50%);
 	 -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);

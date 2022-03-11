@@ -5,9 +5,9 @@ let login_fail = document.createElement('p');
 login_fail.innerText = "Check login details";
 login_fail.style.color='red';
 login_fail.style.textAlign='left';
-login_fail.style.fontSize='10px';
+login_fail.style.fontSize='13px';
 login_fail.style.width='80%';
-login_fail.style.margin='0px 0px 16px 10%';
+login_fail.style.margin='0px 0px 16px 0px';
 
 function loginInput(){
     let email = document.getElementById('email');
