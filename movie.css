@@ -114,10 +114,21 @@ header .navbar span {
 }
 
 .subscribe i {
-  font-size: 20px;
+  font-size: 25px;
   margin-right: 20px;
 }
-
+.icon-flex  a{
+  color: #fff;
+  margin-top: 10px;
+}
+.icon-flex i{
+  
+}
+.icon-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 #palybtn {
   background: #00ADEE;
   width: 50px;
@@ -159,7 +170,7 @@ header.sticky {
 }
 
 header.sticky .subscribe {
-  display: none;
+  /* display: none; */
 }
 
 @media only screen and (max-width:768px) {
@@ -355,13 +366,16 @@ h1 {
 .popular .text {
   padding: 20px;
 }
-
+.time span{
+  font-size: 12px;
+}
 .popular .time {
   margin: 0;
 }
 
 .popular .time a {
   color: #00ADEE;
+  font-size: 12px;
 }
 
 .owl-s .dots span {
