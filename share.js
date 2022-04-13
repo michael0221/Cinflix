@@ -3,7 +3,7 @@ const textarea = document.querySelector('.chatbox-message-input')
 const chatboxForm = document.querySelector('.chatbox-message-form')
 
 textarea.addEventListener('input', function () {
-	let line = textarea.value.split('\n').length
+	let line = textarea.value.split('\n').length 
 
 	if(textarea.rows < 6 || line < 6) {
 		textarea.rows = line
@@ -110,3 +110,38 @@ function isValid(value) {
 
 	return text.length > 0
 }
+
+
+
+
+
+
+/**
+ * Function to produce UUID.
+ * See: http://stackoverflow.com/a/8809472
+ */
+ function generateUUID()
+ {
+   var d = new Date().getTime();
+   
+   if( window.performance && typeof window.performance.now === "function" )
+   {
+     d += performance.now();
+   }
+   
+   var uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c)
+   {
+     var r = (d + Math.random()*16)%16 | 0;
+     d = Math.floor(d/16);
+     return (c=='x' ? r : (r&0x3|0x8)).toString(16);
+   });
+ 
+ return uuid;
+ }
+ 
+ /**
+  * Generate new key and insert into input value
+  */
+ $( '#keygen' ).on('click',function(){
+   $( '#apikey' ).val( generateUUID() );
+ });
